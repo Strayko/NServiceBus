@@ -1,0 +1,14 @@
+{
+  "NServiceBus.MessageId": "eac1836d-a238-43fd-af70-ad2400f424b5",
+  "NServiceBus.MessageIntent": "Send",
+  "NServiceBus.ConversationId": "c2dd3084-39b8-44b7-b5dd-ad2400f424b5",
+  "NServiceBus.CorrelationId": "eac1836d-a238-43fd-af70-ad2400f424b5",
+  "NServiceBus.ReplyToAddress": "ClientUI",
+  "NServiceBus.OriginatingMachine": "MOAMERJUSUPOVIC",
+  "NServiceBus.OriginatingEndpoint": "ClientUI",
+  "$.diagnostics.originating.hostid": "b2d1d4cb7b18a3cc4988784c6185c8f1",
+  "NServiceBus.ContentType": "text\/xml",
+  "NServiceBus.EnclosedMessageTypes": "Messages.PlaceOrder, Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "7.4.6",
+  "NServiceBus.TimeSent": "2021-05-10 14:48:53:931975 Z"
+}
