@@ -3,7 +3,7 @@ using Messages;
 using NServiceBus;
 using NServiceBus.Logging;
 
-namespace Billing
+namespace Shipping
 {
     public class OrderPlacedHandler :
         IHandleMessages<OrderPlaced>
@@ -12,13 +12,8 @@ namespace Billing
 
         public Task Handle(OrderPlaced message, IMessageHandlerContext context)
         {
-            log.Info($"Received OrderPlaced, OrderId = {message.OrderId} - Charging credit card...");
-
-            var orderBilled = new OrderBilled
-            {
-                OrderId = message.OrderId
-            };
-            return context.Publish(orderBilled);
+            log.Info($"Received OrderPlaced, OrderId = {message.OrderId} - Should we ship now?");
+            return Task.CompletedTask;
         }
     }
 }

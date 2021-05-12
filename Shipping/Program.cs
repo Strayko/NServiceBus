@@ -1,6 +1,6 @@
-﻿using System;
+﻿using NServiceBus;
+using System;
 using System.Threading.Tasks;
-using NServiceBus;
 
 namespace Shipping
 {
