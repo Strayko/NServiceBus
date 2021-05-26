@@ -12,6 +12,9 @@ namespace Sales
 
             var endpointConfiguration = new EndpointConfiguration("Sales");
 
+            var recoverability = endpointConfiguration.Recoverability();
+            recoverability.Delayed(delayed => delayed.NumberOfRetries(0));
+
             var transport = endpointConfiguration.UseTransport<LearningTransport>();
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)

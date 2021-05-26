@@ -19,10 +19,12 @@ namespace Sales
         {
             log.Info($"Received PlaceOrder, OrderId = {message.OrderId}");
 
-            if (random.Next(0, 5) == 0)
-            {
-                throw new Exception("Again Exception");
-            }
+            // if (random.Next(0, 5) == 0)
+            // {
+            //     throw new Exception("Again Exception");
+            // }
+            
+            throw new Exception("Again Exception");
             
             // This is normally where some business logic would occur
 
